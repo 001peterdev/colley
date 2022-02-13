@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.colley.android.view.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_groupMessageFragment"
+            app:destination="@id/groupMessageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewIssueFragment"
+            app:destination="@id/viewIssueFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.colley.android.view.fragment.ProfileFragment"
+        android:label="@string/menu_item_profile_title"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="com.colley.android.view.fragment.PolicyFragment"
+        android:label="@string/policy_label"
+        tools:layout="@layout/fragment_policy" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.colley.android.view.fragment.NotificationsFragment"
+        android:label="@string/notifications_label"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_notificationsFragment_to_viewIssueFragment"
+            app:destination="@id/viewIssueFragment" />
+        <action
+            android:id="@+id/action_notificationsFragment_to_viewPostFragment"
+            app:destination="@id/viewPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupMessageFragment"
+        android:name="com.colley.android.view.fragment.GroupMessageFragment"
+        tools:layout="@layout/fragment_group_message" >
+        <argument
+            android:name="groupId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_groupMessageFragment_to_groupInfoFragment"
+            app:destination="@id/groupInfoFragment" />
+        <action
+            android:id="@+id/action_groupMessageFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupInfoFragment"
+        android:name="com.colley.android.view.fragment.GroupInfoFragment"
+        android:label="Group Info"
+        tools:layout="@layout/fragment_group_info" >
+        <argument
+            android:name="groupId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_groupInfoFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.colley.android.view.fragment.ChatsFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_private_chats" >
+        <action
+            android:id="@+id/action_chatsFragment_to_privateMessageFragment"
+            app:destination="@id/privateMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privateMessageFragment"
+        android:name="com.colley.android.view.fragment.PrivateMessageFragment"
+        tools:layout="@layout/fragment_private_message">
+        <argument
+            android:name="chateeId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_privateMessageFragment_to_chateeInfoFragment"
+            app:destination="@id/chateeInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chateeInfoFragment"
+        android:name="com.colley.android.view.fragment.ChateeInfoFragment"
+        tools:layout="@layout/fragment_chatee_info">
+        <argument
+            android:name="chateeId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewIssueFragment"
+        android:name="com.colley.android.view.fragment.ViewIssueFragment"
+        android:label="Issue"
+        tools:layout="@layout/fragment_view_issue">
+        <argument
+            android:name="issueId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_viewIssueFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="com.colley.android.view.fragment.GroupsFragment"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" />
+    <fragment
+        android:id="@+id/issuesFragment"
+        android:name="com.colley.android.view.fragment.IssuesFragment"
+        android:label="fragment_issues"
+        tools:layout="@layout/fragment_issues" />
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.colley.android.view.fragment.UserInfoFragment"
+        tools:layout="@layout/fragment_user_info">
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPostFragment"
+        android:name="com.colley.android.view.fragment.ViewPostFragment"
+        android:label="Post">
+        <argument
+            android:name="postId"
+            app:argType="string" />
+    </fragment>
+</navigation>

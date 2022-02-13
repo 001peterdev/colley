@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_effect_rectangular"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingTop="@dimen/padding_16dp">
+
+    <TextView
+        android:id="@+id/issueTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingEnd="@dimen/padding_8dp"
+        android:textColor="@color/pearl"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/issueTimeStampTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/issueBodyTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingTop="@dimen/padding_4dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        android:paddingBottom="@dimen/margin_8dp"
+        android:textColor="@color/light_pearl"
+        android:textSize="@dimen/text_size_15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/issueTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/issueTitleTextView"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_4dp"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/ripple_effect_rectangular"
+        android:padding="@dimen/margin_2dp"
+        android:textColor="@color/pearl"
+        app:layout_constraintBottom_toBottomOf="@+id/userImageView"
+        app:layout_constraintEnd_toStartOf="@+id/userImageView"
+        app:layout_constraintTop_toTopOf="@+id/userImageView" />
+
+    <TextView
+        android:id="@+id/contributionsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_16dp"
+        android:paddingEnd="@dimen/padding_8dp"
+        android:drawablePadding="@dimen/padding_4dp"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/text_size_14sp"
+        android:visibility="invisible"
+        app:drawableStartCompat="@drawable/ic_contributions"
+        app:drawableTint="@color/orange"
+        app:layout_constraintEnd_toStartOf="@+id/userNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/issueBodyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/issueBodyTextView" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userImageView"
+        android:layout_width="@dimen/width_30dp"
+        android:layout_height="@dimen/height_30dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/endorsementTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/issueBodyTextView"
+        app:shapeAppearance="@style/RoundShapeAppearance" />
+
+    <TextView
+        android:id="@+id/issueTimeStampTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:textColor="@color/light_pearl"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/issueTitleTextView"
+        app:layout_constraintEnd_toStartOf="@+id/bookMarkmageView"
+        app:layout_constraintTop_toTopOf="@+id/issueTitleTextView" />
+
+    <TextView
+        android:id="@+id/endorsementTextView"
+        android:layout_width="@dimen/width_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="@dimen/text_size_14sp"
+        android:visibility="invisible"
+        android:textColor="@color/green"
+        app:drawableTint="@color/green"
+        android:drawablePadding="@dimen/padding_4dp"
+        android:paddingStart="@dimen/margin_16dp"
+        android:paddingEnd="@dimen/padding_8dp"
+        app:layout_constraintEnd_toEndOf="@+id/contributionsTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/contributionsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/contributionsTextView"
+        app:drawableStartCompat="@drawable/ic_endorse" />
+
+    <ImageView
+        android:id="@+id/bookMarkmageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:visibility="gone"
+        android:src="@drawable/bookmark_drawable_state_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userSchoolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pearl"
+        android:textSize="@dimen/text_size_12sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/ripple_effect_rectangular"
+        android:padding="@dimen/padding_2dp"
+        app:layout_constraintEnd_toEndOf="@+id/userNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/lighter_pearl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSchoolTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

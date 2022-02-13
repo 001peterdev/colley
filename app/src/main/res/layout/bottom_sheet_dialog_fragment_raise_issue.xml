@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/issueTitleTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_gravity="center"
+        app:counterEnabled="true"
+        app:boxCornerRadiusBottomEnd="@dimen/corner_radius_8dp"
+        app:boxCornerRadiusBottomStart="@dimen/corner_radius_8dp"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius_8dp"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius_8dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        app:boxBackgroundColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/issueTitleNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:inputType="text"
+            android:textSize="@dimen/text_size_14sp"
+            android:hint="@string/issue_title_text"
+            android:textColor="@color/light_pearl" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/issueBodyTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_gravity="center"
+        app:counterEnabled="true"
+        app:boxCornerRadiusBottomEnd="@dimen/corner_radius_8dp"
+        app:boxCornerRadiusBottomStart="@dimen/corner_radius_8dp"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius_8dp"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius_8dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        app:boxBackgroundColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/issueBodyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="start"
+            android:textSize="@dimen/text_size_14sp"
+            android:hint="@string/body_text"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:textColor="@color/light_pearl" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/raiseIssueButton"
+        android:textColor="@color/light_pearl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:layout_gravity="end"
+        android:drawableTop="@drawable/ic_save"
+        android:padding="4dp"
+        android:background="@drawable/ripple_effect_curved_edges_8dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:textSize="@dimen/text_size_12sp"
+        android:text="@string/raise_text"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

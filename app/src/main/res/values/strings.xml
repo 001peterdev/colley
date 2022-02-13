@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Colley</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="school_name_placeholder">University of Benin</string>
+    <string name="issues_tab_name">Issues</string>
+    <string name="posts_tab_name">Posts</string>
+    <string name="groups_tab_name">Groups</string>
+    <string name="menu_item_profile_title">Profile</string>
+    <string name="menu_item_messages_title">Messages</string>
+    <string name="menu_item_settings_title">Settings</string>
+    <string name="menu_item_account_text">Account</string>
+    <string name="menu_item_contact_us_title">Contact us</string>
+    <string name="menu_item_policy_text">Policy</string>
+    <string name="menu_item_notifications_title">Notifications</string>
+    <string name="name_placeholder">Hussena Abdulwahab</string>
+    <string name="sign_up_label">Sign Up</string>
+    <string name="login_label">Login</string>
+    <string name="contact_us_label">Contact us</string>
+    <string name="faqs_label">FAQs</string>
+    <string name="policy_label">Policy</string>
+    <string name="notifications_label">Notifications</string>
+    <string name="rate_app_label">Rate app</string>
+    <string name="time_stamp_placeholder">2 hours ago</string>
+    <string name="location_place_holder">Faculty car park</string>
+    <string name="like_text">Like</string>
+    <string name="comment_text">Comment</string>
+    <string name="promote_text">Promote</string>
+    <string name="context_text_placeholder">Android developers community for Uniben students.</string>
+    <string name="unread_conversation_count_placeholder">0</string>
+    <string name="issue_title_placeholder">SUG election palava</string>
+    <string name="issue_body_placeholder">The election which supposedly should have held peacefully</string>
+    <string name="raised_by_placeholder">Blessing Dangbana</string>
+    <string name="contributions_count_placeholder">64 contributions</string>
+    <string name="endorse_plural_placeholder">101 endorsements</string>
+    <string name="user_school_placeholder">UNIBEN</string>
+    <string name="comments_count_placeholder">0 comments</string>
+    <string name="likes_count_placeholder">0 likes</string>
+    <string name="promotions_count_placeholder">0 promotions</string>
+    <string name="comment_placeholder">I admire your courage to come out and speak openly about this issue. I would like to add that you are my namesake</string>
+    <string name="comments_tab_name">Comments</string>
+    <string name="likes_tab_name">Likes</string>
+    <string name="promotions_tab_name">Promotions</string>
+    <string name="name_text">Name</string>
+    <string name="school_text">School</string>
+    <string name="status_text">Status</string>
+    <string name="course_text">Course of study</string>
+    <string name="bio_text">Bio</string>
+    <string name="info_text">Info</string>
+    <string name="edit_text">Edit</string>
+    <string name="notification_placeholder_text">Sam Michael from UNIBEN commented on your postModel</string>
+    <string name="search_text">Search</string>
+    <string name="policy_support_text"><![CDATA[Policy & Support]]></string>
+    <string name="menu_item_logout_title">Logout</string>
+    <string name="floating_action_buttton_desc">floating action buttton</string>
+    <string name="continue_to_home_text">Continue to home</string>
+    <string name="welcome_back_text">Welcome back</string>
+    <string name="welcome_text">Welcome to Colley</string>
+    <string name="group_name_text">Group Name</string>
+    <string name="add_members_text">Add Members</string>
+    <string name="group_description_text">Group Description (optional)</string>
+    <string name="select_group_members_text">Select Group Members</string>
+    <string name="create_text">create</string>
+    <string name="save_text">Save</string>
+    <string name="select_group_icon_text">Select Group Photo</string>
+    <string name="say_something_text">Say something...</string>
+    <string name="about">About</string>
+    <string name="members_text">Members</string>
+    <string name="add_text">Add</string>
+    <string name="admin_text">ADMIN</string>
+    <string name="drag_handler_text">drag handler</string>
+    <string name="write_message_text">Write message..</string>
+    <string name="send_text">Send</string>
+    <string name="retry_text">Retry</string>
+    <string name="leave_group_text">Leave Group</string>
+    <string name="select_who_to_message_text">Select Who To Message</string>
+    <string name="delete_chat_text">Delete Chat</string>
+    <string name="raise_text">Raise</string>
+    <string name="issue_title_text">Title the issue</string>
+    <string name="body_text">What\'s the issue?</string>
+    <string name="endorse">Endorse</string>
+    <string name="no_comments_text">No comments</string>
+    <string name="anonymous_text">Anonymous</string>
+    <string name="write_comment_text">Write comment..</string>
+    <string name="location_text">Tag your location</string>
+    <string name="post_text">Post</string>
+    <string name="no_likes_text">No Likes</string>
+    <string name="delete_post_text">Delete post</string>
+    <string name="report_post_text">Report this post</string>
+    <string name="send_message_text">Send Message</string>
+    <string name="view_profile_text">View Profile</string>
+    <string name="flag_post_text">Flag this post</string>
+    <string name="flag_issue_text">Flag this issue</string>
+    <string name="delete_issue_text">Delete issue</string>
+    <string name="no_issues_currently">No issues currently</string>
+    <string name="no_notifications_currently">No notifications currently</string>
+    <string name="not_a_member_of_any_group_text">Not a member of any group</string>
+    <string name="sign_in_text">Sign in</string>
+    <string name="policy_statement_text">Messages in this app are not end to end encrypted.
+        This app is a work in progress and may likely undergo changes that will affect your data.
+        In as much as we will try to protect user privacy, we will not be responsible for any
+        consequences that may arise from the usage of this app.
+        Feel free to share with us any idea on how you think we could improve some of it’s features
+        and also recommend whatever feature you’ll like to see in the next update.
+        Continued usage of this app after reading this brief policy statement means that you
+        understand and accept the risks, terms and conditions associated with it’s use. Thank you for your patronage.</string>
+
+</resources>
